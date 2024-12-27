@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="57">
+ <editorsettings>
+  <export target="room1.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="name" value="Test Map - Room 1"/>
+ </properties>
+ <tileset firstgid="1" source="../tilesets/castle.tsx"/>
+ <layer id="1" name="tiles" width="16" height="12">
+  <data encoding="csv">
+0,22,23,13,23,23,13,23,23,23,13,23,13,23,24,0,
+0,22,23,23,23,23,23,23,23,23,23,23,23,23,24,0,
+0,26,27,27,27,27,27,27,27,27,27,27,27,27,28,0,
+0,6,7,7,7,7,7,7,7,7,7,7,7,7,8,0,
+0,10,11,11,11,11,11,11,11,11,11,11,11,11,12,0,
+0,10,11,11,11,11,11,11,11,11,11,11,11,11,12,0,
+0,10,11,11,11,11,11,11,11,11,11,11,11,11,12,0,
+0,10,11,11,11,11,11,11,11,11,11,11,11,11,12,0,
+0,14,15,15,11,11,11,11,11,11,11,11,15,15,16,0,
+0,0,0,0,14,15,15,15,15,15,15,16,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="decal" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="3" name="collision" opacity="0.5">
+  <object id="51" x="40" y="80" width="560" height="40"/>
+  <object id="52" x="600" y="120" width="40" height="240"/>
+  <object id="53" x="480" y="360" width="120" height="40"/>
+  <object id="54" x="160" y="400" width="320" height="40"/>
+  <object id="55" x="40" y="360" width="120" height="40"/>
+  <object id="56" x="0" y="120" width="40" height="240"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="38" name="enemy" x="500" y="240">
+   <properties>
+    <property name="actor" value="dummy"/>
+    <property name="encounter" value="dummy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="savepoint" x="140" y="220">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="20" name="spawn" x="320" y="240">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
